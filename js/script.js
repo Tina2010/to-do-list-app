@@ -21,4 +21,16 @@ li.append(inputValue);
     }
 
     li.on("dblclick", crossOut);
+
+    //3. Deleting with "X":
+
+    let crossOutButton = $('<crossOutButton>X</crossOutButton>');
+
+    li.append(crossOutButton);
+
+    crossOutButton.on("click", deleteListItem);
+
+    function deleteListItem() {
+        li.addClass("delete")
+    }
 };
