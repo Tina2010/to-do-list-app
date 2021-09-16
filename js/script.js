@@ -33,4 +33,7 @@ li.append(inputValue);
     function deleteListItem() {
         li.addClass("delete")
     }
+
+    // 4. Reordering the items:
+    $('#list').sortable();
 };
